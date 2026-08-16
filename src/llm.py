@@ -1,5 +1,9 @@
 import os
+import time
 import requests
+
+
+MODEL = "openai/gpt-oss-20b:free"
 
 
 def generate_response(messages):
@@ -12,7 +16,7 @@ def generate_response(messages):
         )
 
     response = requests.post(
-        "https://openrouter.ai/api/v1/chat/completions",
+        url="https://openrouter.ai/api/v1/chat/completions",
 
         headers={
             "Authorization": f"Bearer {api_key}",
@@ -20,12 +24,18 @@ def generate_response(messages):
         },
 
         json={
-            "model": "openai/gpt-oss-20b:free",
+            "model": MODEL,
             "messages": messages,
         },
 
         timeout=60,
     )
+
+    if response.status_code == 429:
+        raise RuntimeError(
+            "OpenRouter rate limit reached. "
+            "Please wait a little and try again."
+        )
 
     response.raise_for_status()
 

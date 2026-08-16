@@ -1,0 +1,38 @@
+IT EQUIPMENT POLICY
+
+Document ID: IT-POL-001
+Version: 1.0
+
+1. Laptop Requests
+
+Employees may request a company laptop when their current equipment is unavailable, damaged, outdated, or insufficient for their assigned responsibilities.
+
+2. Request Process
+
+A laptop request must include:
+- Employee name
+- Department
+- Reason for the request
+- Required specifications
+
+3. Approval Process
+
+Laptop requests require approval from the employee's reporting manager.
+
+Requests for high-performance workstations may require additional approval from the IT department.
+
+4. Processing
+
+After approval, the IT department reviews the request and determines the appropriate equipment based on the employee's role and technical requirements.
+
+5. Replacement
+
+Employees may request replacement equipment when the existing device is damaged or no longer meets the requirements of their role.
+
+6. Security
+
+Company equipment must be used according to the organization's security policies. Employees must not install unauthorized software or disable security controls.
+
+7. Support
+
+Employees experiencing hardware or software problems should contact the IT support team.
